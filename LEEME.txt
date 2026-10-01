@@ -1,0 +1,22 @@
+SIBNOVA - DIAGNÓSTICO DIGITAL
+=============================
+
+Archivo independiente: index.html (+ carpeta assets/ con el logo).
+Se abre con doble clic o se sube tal cual a cualquier hosting, por ejemplo:
+  https://sibnova.com.bo/diagnostico/   (subir esta carpeta como /diagnostico)
+
+Cómo funciona
+- 10 preguntas (una por pantalla) + datos de contacto, unos 2 minutos.
+- Al terminar muestra el nivel de digitalización (orientativo) y las 3 soluciones
+  más adecuadas, explicando el porqué con las respuestas del cliente.
+- Botón "Enviar mi diagnóstico por WhatsApp": abre WhatsApp (+591 7648 6765)
+  con todas las respuestas ya redactadas.
+- Las respuestas se guardan en el navegador del cliente por si se interrumpe.
+
+Dónde cambiar cosas (dentro de index.html, bloque <script>)
+- CONFIG.whatsapp ............ número que recibe los diagnósticos
+- STEPS ...................... preguntas y opciones
+- SOLUTIONS .................. textos de las soluciones recomendadas
+- RULES ...................... qué respuesta suma puntos a qué solución
+- computeScore / levelFor .... cálculo del puntaje y textos de cada nivel
+- Google Analytics: descomentar el bloque del <head> y poner el ID G-XXXXXXXXXX.
